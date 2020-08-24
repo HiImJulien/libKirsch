@@ -16,7 +16,7 @@ jobs:
         - uses: seanmiddleditch/gha-setup-ninja@master
         - name: Configure & Build
           run: |
-            cmake . -Bbuild
+            cmake . -Bbuild -G Ninja
             cmake --build build
         - name: Test
           run: |
